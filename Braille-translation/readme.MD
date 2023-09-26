@@ -15,7 +15,7 @@ So given the plain text word "code", you get the Braille dots:
 
 where 1 represents a bump and 0 represents no bump. Put together, "code" becomes the output string "100100101010100110100010".
 
-Write a function solution(plaintext) that takes a string parameter and returns a string of 1's and 0's representing the bumps and absence of bumps in the input string. Your function should be able to encode the 26 lowercase letters, handle capital letters by adding a Braille capitalization mark before that character, and use a blank character (000000) for spaces. All signs on the space station are less than fifty characters long and use only letters and spaces.
+Write a function solution(plaintext) that takes a string parameter and returns a string of 1's and 0's representing the bumps and absence of bumps in the input string. Your function should be able to encode the 26 lowercase letters, handle capital letters by adding a Braille capitalization mark before that character, and use a blank character (000000) for spaces. All signs on the space station are less thanre fifty characters long and use only letters and spaces.
 
 Languages
 =========
@@ -32,7 +32,7 @@ Note that it may also be run against hidden test cases not shown here.
 Input:
 solution.solution("The quick brown fox jumps over the lazy dog")
 Output:
-    000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100011100000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110
+    000001011110110010100010000000111110101001010100100100101000000000110000111010101010010111101110000000110100101010101101000000010110101001101100111100011100000000101010111001100010111010000000011110110010100010000000111000100000101011101111000000100110101010110110edi
 
 Input:
 solution.solution("code")
@@ -59,3 +59,23 @@ Input:
 Solution.solution("code")
 Output:
     100100101010100110100010
+
+Python======
+Your code will run inside a Python 2.7.13 sandbox. All tests will be run by calling the solution() function.
+
+Standard libraries are supported except for bz2, crypt, fcntl, mmap, pwd, pyexpat, select, signal, termios, thread, time, unicodedata, zipimport, zlib.
+
+Input/output operations are not allowed.
+
+Your solution must be under 32000 characters in length including new lines and other non-printing characters.
+
+Java====
+Your code will be compiled using standard Java 8. All tests will be run by calling the solution() method inside the Solution class
+
+Execution time is limited.
+
+Wildcard imports and some specific classes are restricted (e.g. java.lang.ClassLoader). You will receive an error when you verify your solution if you have used a restricted class.
+
+Third-party libraries, input/output operations, spawning threads or processes and changes to the execution environment are not allowed.
+
+Your solution must be under 32000 characters in length including new lines and other non-printing characters.
